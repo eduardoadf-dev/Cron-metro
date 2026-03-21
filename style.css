@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0dc6f5, #045b96);
+    padding: 20px 0;
+}
+
+#stopwatch {
+    box-shadow: 0 10px 25px rgba(37, 255, 8, 0.2);
+    background-color: #f0e8e8;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px; /* Largura */
+    height: 670px; /* Altura */
+    justify-content: flex-start;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0dc6f5;
+    height: 200px;
+    width: 200px;
+    border: 6px solid #045b96;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #06082b;
+    margin-bottom: 25px;
+    font-variant-numeric: tabular-nums; /* Evita que os números balancem */
+}
+
+#actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: #045b96;
+    color: #e9e3e3;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#actions button:hover {
+    background-color: #0dc6f5;
+}
+
+#marks-list {
+    height: 300px; /* Ajustado para caber pelo menos 7 marcações */
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding-right: 8px;
+    background-color: rgba(0, 0, 0, 0.03); /* Fundo sutil para marcar o espaço */
+    border-radius: 8px;
+}
+
+.mark {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px 0; /* Margem ajustada para o cálculo de 7 itens */
+    border-radius: 6px;
+    border-left: 5px solid #2ecc71;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 38px; /* Altura fixa para cada marca ajudar no cálculo visual */
+    align-items: center;
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#marks-list::-webkit-scrollbar { /* Customização da Barra de Rolagem */
+    width: 5px;
+}
+
+#marks-list::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 10px;
+}
+
+#mark:active { /* Quando o mouse passar e não puder clicar, mostra o ícone de 'proibido' */
+    transform: scale(0.95);
+}
+
+#actions button#mark.disabled {
+    background-color: #bdc3c7 !important;
+    color: #7f8c8d !important;
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+    pointer-events: none; /* Isto impede o clique mesmo se o usuário insistir */
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 450px) {
+    #stopwatch {
+        width: 90%;          /* Ocupa 90% da largura da tela */
+        height: auto;        /* Deixa a altura livre para não sobrar espaço vazio no fundo */
+        min-height: 550px;   /* Mas mantém um mínimo para não achatar */
+        padding: 1.5rem;
+    }
+
+    #timer {
+        width: 180px;        /* Diminui um pouco o círculo no celular */
+        height: 180px;
+        font-size: 20px;     /* Diminui a fonte do tempo */
+        border-width: 5px;   /* Borda um pouco mais fina */
+    }
+
+    #actions {
+        gap: 8px;            /* Aproxima os botões */
+    }
+
+    #actions button {
+        height: 50px;        /* Botões um pouco mais altos para facilitar o toque */
+        font-size: 1.1rem;
+    }
+}
