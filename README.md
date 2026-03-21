@@ -3,7 +3,7 @@
 Um cronômetro digital de alta precisão desenvolvido com JavaScript puro (Vanilla JS), focado em performance, design responsivo e experiência do usuário.
 
 ## 🚀 Demonstração
-[link GitHub Pages]
+(https://eduardoadf-dev.github.io/Cron-metro/)
 
 ## ✨ Funcionalidades
 - **Precisão Real:** Diferente de contadores comuns, este projeto utiliza a diferença de `Date.now()` para garantir que o tempo não sofra atrasos do navegador.
