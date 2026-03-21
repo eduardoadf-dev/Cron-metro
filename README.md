@@ -1,4 +1,4 @@
-# ⏱️ Cronômetro Pro
+# ⏱️ Cronômetro
 
 Um cronômetro digital de alta precisão desenvolvido com JavaScript puro (Vanilla JS), focado em performance, design responsivo e experiência do usuário.
 
