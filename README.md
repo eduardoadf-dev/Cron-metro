@@ -1,6 +1,6 @@
 # ⏱️ Cronômetro
 
-Um cronômetro digital de alta precisão desenvolvido com JavaScript puro (Vanilla JS), focado em performance, design responsivo e experiência do usuário.
+Um cronômetro de alta precisão desenvolvido com JavaScript puro (Vanilla JS), focado em performance, design responsivo e experiência do usuário.
 
 ## 🚀 Demonstração
 https://eduardoadf-dev.github.io/Cron-metro/
