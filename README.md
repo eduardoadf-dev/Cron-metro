@@ -75,12 +75,6 @@ A aplicação é adaptada para telas menores que **450px**, com ajustes no taman
 
 ---
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e distribuir.
-
----
-
 ```javascript
 startTime = Date.now() - elapsedTime;
 // Garante que o cronômetro seja preciso independente da carga do processador.
