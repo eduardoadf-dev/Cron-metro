@@ -7,6 +7,8 @@ Aplicação web de cronômetro profissional com suporte a **marcação de tempos
 ## 🚀 Demonstração
 Link do projeto: https://eduardoadf-dev.github.io/Cron-metro/
 
+---
+
 ## 📋 Sobre o projeto
 
 Um **Cronômetro** digital que exibe tempo em horas, minutos, segundos e centésimos de segundo. O usuário pode iniciar, pausar, resetar e marcar tempos durante a contagem, com um histórico organizado exibido na tela.
