@@ -1,6 +1,6 @@
 # ⏱️ Cronômetro
 
-Aplicação web de cronômetro profissional com suporte a **marcação de tempos**, histórico de voltas e interface totalmente responsiva.
+Aplicação web de um cronômetro com suporte a **marcação de tempos**, histórico de voltas e interface totalmente responsiva.
 
 ---
 
